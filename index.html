@@ -6,6 +6,7 @@
 <title>Mohamed Suhail D</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -284,12 +285,38 @@ html { scroll-behavior: smooth; }
 </section>
 
 <!-- CONTACT -->
+<!-- CONTACT -->
 <section id="contact" class="py-16 text-center">
-  <h2 class="text-2xl font-semibold mb-8 text-indigo-600">Contact</h2>
-  <div class="flex justify-center gap-8 text-lg">
-    <a href="https://github.com/zuhail007" class="hover:text-indigo-600">GitHub</a>
-    <a href="https://www.linkedin.com/in/mohamed-suhail-d-28-jan?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="hover:text-indigo-600">LinkedIn</a>
-    <a href="mailto:mohammedsuhaildileep@gmail.com" class="hover:text-indigo-600">Email</a>
+  <h2 class="text-2xl font-semibold mb-10 text-indigo-600">Contact</h2>
+
+  <div class="flex justify-center gap-10">
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/mohamed-suhail-d-28-jan"
+       target="_blank"
+       class="group flex flex-col items-center gap-2 hover:text-indigo-600 transition">
+
+      <i data-lucide="linkedin" class="w-8 h-8 group-hover:scale-110 transition"></i>
+      <span class="text-sm">LinkedIn</span>
+    </a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/zuhail007"
+       target="_blank"
+       class="group flex flex-col items-center gap-2 hover:text-indigo-600 transition">
+
+      <i data-lucide="github" class="w-8 h-8 group-hover:scale-110 transition"></i>
+      <span class="text-sm">GitHub</span>
+    </a>
+
+    <!-- Email -->
+    <a href="mailto:mohammedsuhaildileep@gmail.com"
+       class="group flex flex-col items-center gap-2 hover:text-indigo-600 transition">
+
+      <i data-lucide="mail" class="w-8 h-8 group-hover:scale-110 transition"></i>
+      <span class="text-sm">Email</span>
+    </a>
+
   </div>
 </section>
 
@@ -300,8 +327,11 @@ function toggle(id) {
   document.getElementById(id).classList.toggle("hidden");
 }
 </script>
-
+<script>
+  lucide.createIcons();
+</script>
 </body>
 </html>
+
 
 
